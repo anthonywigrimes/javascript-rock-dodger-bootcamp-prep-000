@@ -129,12 +129,13 @@ function endGame() {
     clearInterval(gameInterval);
     window.removeEventListener('keydown', moveDodger);
     console.log(ROCKS);
+    ROCKS.length = 0;
     var elems = document.getElementsByClassName('rock');
     while (elems[0]) {
         elems[0].parentNode.removeChild(elems[0]);
         console.log(elems[0] + " removed");
     }
-    //alert("YOU LOSE!");
+    alert("YOU LOSE!");
 }
 
 function moveDodger(e) {
