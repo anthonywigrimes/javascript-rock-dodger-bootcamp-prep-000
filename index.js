@@ -135,7 +135,7 @@ function endGame() {
     alert("YOU LOSE!");
     // update the "START" label
     var again = document.getElementById('start');
-    again.innerHTML = 'PLAY AGAIN'?
+    //again.innerHTML = 'PLAY AGAIN'?
     //again.style.display = 'block';
 }
 
