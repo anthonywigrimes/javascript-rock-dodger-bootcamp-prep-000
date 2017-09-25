@@ -103,6 +103,7 @@ function createRock(x) {
      */
      if (top > 400) {
          GAME.removeChild(rock);
+         ROCKS.switch
      }
   }
 
