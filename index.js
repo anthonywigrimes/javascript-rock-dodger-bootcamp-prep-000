@@ -130,6 +130,7 @@ function endGame() {
     window.removeEventListener('keydown', moveDodger);
     console.log(ROCKS);
     ROCKS.length = 0;
+    var elems = document.
     //alert("YOU LOSE!");
 }
 
