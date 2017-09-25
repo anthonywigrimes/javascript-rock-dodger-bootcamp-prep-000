@@ -133,6 +133,10 @@ function endGame() {
         elems[0].parentNode.removeChild(elems[0]);
     }
     alert("YOU LOSE!");
+    // update the "START" label
+    var again = document.getElementById('start');
+    again.innerHTML = 'PLAY AGAIN'?
+    again.style.display = 'block';
 }
 
 function moveDodger(e) {
