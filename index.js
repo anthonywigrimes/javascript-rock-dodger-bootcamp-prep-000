@@ -127,8 +127,8 @@ function endGame() {
     clearInterval(gameInterval);
     window.removeEventListener('keydown', moveDodger);
    ROCKS = [];
-   while (GAME.firstChild) {
-       GAME.removeChild(GAME.firstChild);
+   while (GAME.lastChild) {
+       GAME.removeChild(GAME.lastChild);
    }
    alert("YOU LOSE!");
 }
