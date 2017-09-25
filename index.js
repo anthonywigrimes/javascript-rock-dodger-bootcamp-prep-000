@@ -127,9 +127,9 @@ function endGame() {
     clearInterval(gameInterval);
     window.removeEventListener('keydown', moveDodger);
     var currentRocks = document.querySelectorAll('.rock');
-    while (currentRocks.length > 0) {
-        currentRocks[0].parentNode.removeChild(currentRocks[0]);
-    }
+    //while (currentRocks.length > 0) {
+    //    currentRocks[0].parentNode.removeChild(currentRocks[0]);
+    //}
     alert("YOU LOSE!");
 }
 
