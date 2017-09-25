@@ -127,11 +127,8 @@ function createRock(x) {
 function endGame() {
     clearInterval(gameInterval);
     window.removeEventListener('keydown', moveDodger);
+    console.log(ROCKS);
     ROCKS.length = 0;
-    var elems = document.getElementsByClassName('rock');
-    for (var i = 0; i < elems.length; i++) {
-        console.log(elems[i].parentNode);
-    }
     //alert("YOU LOSE!");
 }
 
