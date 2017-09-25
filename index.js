@@ -136,7 +136,7 @@ function endGame() {
     // update the "START" label
     var again = document.getElementById('start');
     again.innerHTML = 'PLAY AGAIN'?
-    again.style.display = 'block';
+    //again.style.display = 'block';
 }
 
 function moveDodger(e) {
