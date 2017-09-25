@@ -129,7 +129,7 @@ function endGame() {
     ROCKS.length = 0;
     var elems = document.getElementsByClassName('rock');
     for (var i = 0; i < elems.length; i++) {
-        elems[i].remove
+        elems[i].remove();
     }
     //alert("YOU LOSE!");
 }
