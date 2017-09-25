@@ -126,16 +126,16 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-    clearInterval(gameInterval);
-    window.removeEventListener('keydown', moveDodger);
-    console.log(ROCKS);
-    ROCKS.length = 0;
-    var elems = document.getElementsByClassName('rock');
-    while (elems[0]) {
-        elems[0].parentNode.removeChild(elems[0]);
-        console.log(elems[0] + " removed");
-    }
-    alert("YOU LOSE!");
+    // clearInterval(gameInterval);
+    // window.removeEventListener('keydown', moveDodger);
+    // console.log(ROCKS);
+    // ROCKS.length = 0;
+    // var elems = document.getElementsByClassName('rock');
+    // while (elems[0]) {
+    //     elems[0].parentNode.removeChild(elems[0]);
+    // }
+    //alert("YOU LOSE!");
+    alert("endGame called");
 }
 
 function moveDodger(e) {
