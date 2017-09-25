@@ -130,7 +130,6 @@ function endGame() {
     console.log(ROCKS);
     ROCKS.length = 0;
     //alert("YOU LOSE!");
-    return;
 }
 
 function moveDodger(e) {
