@@ -127,15 +127,14 @@ function createRock(x) {
 function endGame() {
     clearInterval(gameInterval);
     window.removeEventListener('keydown', moveDodger);
-    var elems = document.getElementsByClassName('rock');
-    while (elems[0]) {
-        elems[0].parentNode.removeChild(elems[0]);
-    }
-
-    alert("YOU LOSE!");
-    // update the "START" label
+    // var elems = document.getElementsByClassName('rock');
+    // while (elems[0]) {
+    //     elems[0].parentNode.removeChild(elems[0]);
+    // }
+    ROCKS.forEach(function(rock) { rock.remove() });
     START.innerHTML = 'PLAY AGAIN?';
     START.style.display = 'inline';
+    alert("YOU LOSE!");
 }
 
 function moveDodger(e) {
