@@ -126,11 +126,7 @@ function createRock(x) {
 function endGame() {
     clearInterval(gameInterval);
     window.removeEventListener('keydown', moveDodger);
-    var currentRocks = document.getElementByClaasName('.rock');
-    for (var i = 0; i < currentRocks.length; i++) {
-        var parent = currentRocks[i].parentNode;
-        parent.removeChild(currentRocks[i]);
-    }
+    
     //alert("YOU LOSE!");
 }
 
