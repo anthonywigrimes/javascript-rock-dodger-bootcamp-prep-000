@@ -133,6 +133,7 @@ function endGame() {
     var elems = document.getElementsByClassName('rock');
     while (elems[0]) {
         elems[0].parentNode.removeChild(elems[0]);
+        console.log(elems[0] + " removed");
     }
     //alert("YOU LOSE!");
 }
