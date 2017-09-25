@@ -130,7 +130,7 @@ function endGame() {
    while (GAME.firstChild) {
        GAME.removeChild(GAME.firstChild);
    }
-   //alert("YOU LOSE!");
+   alert("YOU LOSE!");
 }
 
 function moveDodger(e) {
