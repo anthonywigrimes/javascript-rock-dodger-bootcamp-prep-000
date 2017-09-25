@@ -127,7 +127,8 @@ function endGame() {
     clearInterval(gameInterval);
     window.removeEventListener('keydown', moveDodger);
     ROCKS.length = 0;
-    
+    var elems = document.getElementsByClassName('rock');
+    console.log(elems);
     //alert("YOU LOSE!");
 }
 
