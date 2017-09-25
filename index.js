@@ -109,10 +109,6 @@ function createRock(x) {
   }
 
   // We should kick off the animation of the rock around here
-  if (checkCollision(rock)) {
-      endGame();
-      return;
-  }
   window.requestAnimationFrame(moveRock);
 
   // Add the rock to ROCKS so that we can remove all rocks
