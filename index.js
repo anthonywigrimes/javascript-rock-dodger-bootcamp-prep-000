@@ -132,10 +132,11 @@ function endGame() {
     while (elems[0]) {
         elems[0].parentNode.removeChild(elems[0]);
     }
+
     alert("YOU LOSE!");
     // update the "START" label
-    START.innerHTML = 'PLAY AGAIN'?
-    //again.style.display = 'block';
+    //START.innerHTML = 'PLAY AGAIN'?
+    START.style.display = 'block';
 }
 
 function moveDodger(e) {
