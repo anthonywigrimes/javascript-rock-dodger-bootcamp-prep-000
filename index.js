@@ -130,7 +130,7 @@ function endGame() {
     window.removeEventListener('keydown', moveDodger);
     console.log(ROCKS);
     ROCKS.length = 0;
-    var elems = document.getElementByClassName('rock');
+    var elems = document.getElementsByClassName('rock');
     while (elems[0]) {
         elems[0].parentNode.removeChild(elems[0]);
     }
